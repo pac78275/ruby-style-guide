@@ -1392,6 +1392,9 @@ condition](#safe-assignment-in-condition).
 
 * <a name="double-pipe-for-uninit"></a>
   Use `||=` to initialize variables only if they're not already initialized.
+  EDIT: This is not as useful as it may seem and should only be used is specific
+  cases due to some unexpected behaviour. Initialization should be done with a
+  standard = in the vast majority of cases. - JDW
 <sup>[[link](#double-pipe-for-uninit)]</sup>
 
   ```Ruby
